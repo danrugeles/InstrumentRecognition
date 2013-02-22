@@ -1,0 +1,17 @@
+from numpy import*
+from cv2 import *
+	
+a=array([10,10,10,5,5,5,5,10,1])
+t=array([0,0,0,0,0,1,1,2,2])
+
+
+d={}
+
+for elem,elem2 in zip(a,t):
+	print elem,elem2
+	if d.has_key(elem):
+		d[elem]=d.get[elem]+elem2
+	else:
+		d[elem]=elem2
+
+print d
